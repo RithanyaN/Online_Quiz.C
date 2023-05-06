@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+   printf("                                     ^^^💻  Welcome To The Online Quiz 💻 ^^^                        \n");
+   char n[50];
+   printf("Please enter your name:");
+   gets(n);
+   printf(">Press 1 to start the game\n");
+   printf(">press 0 to quit the game\n");
+   int ch,pt=0,t=0,a1,a2,a3,a4;
+   scanf("%d",&ch);
+   if(ch==1)
+   {
+       printf("                                       ^^^The Quiz game has started^^^\n\n");
+       printf("1)Which one is the first search engine in internet?\n");
+       printf(" 1)Google\n 2)Jumbstation\n 3)archie\n");
+       printf("Enter your answer:");
+       scanf("%d",&a1);
+       if(a1==2)
+       {
+           pt++;
+           printf("Correct Answer 👍\n\n");
+
+       }
+       else
+       {
+           printf("Wrong Answer\n\n");
+       }
+       printf("2)How do you insert COMMENTS in C code?\n");
+       printf(" 1)##\n 2)//\n 3)--\n");
+       printf("Enter your answer:");
+       scanf("%d",&a2);
+       if(a2==2)
+       {
+           pt++;
+           printf("Correct Answer 👍\n\n");
+       }
+        else
+       {
+           printf("Wrong Answer\n\n");
+       }
+       printf("3)When a variable is created in C, a memory address is assigned to the variable.\n");
+       printf(" 1)True\n 2)False\n");
+       printf("Enter your answer:");
+       scanf("%d",&a3);
+       if(a3==1)
+       {
+           pt++;
+           printf("Correct Answer 👍\n\n");
+       }
+       else
+       {
+           printf("Wrong answer\n\n");
+       }
+       printf("4)How is an array initialized in C language?\n");
+       printf(" 1)int a[10]=[1,2,3,4]\n 2)int a[]={1,2,3}\n 3)int a={1,2,3}\n");
+       printf("Enter your answer:");
+       scanf("%d",&a4);
+       if(a4==2)
+       {
+           pt++;
+           printf("Correct Answer 👍\n");
+       }
+       else
+       {
+         printf("Wrong Answer\n");  
+       }
+       t=pt*5;
+       printf("                                  ^^^Total marks secured by %s : %d/20^^^\n",n,t);
+       printf("                                  ^^^ ✌️️ Thanks for your participation ✌️ ^^^\n    ");
+   }
+   else if(ch==0)
+   {
+     printf("The Quiz game has ended without %s paticipation\n",n);  
+   }
+   else
+   {
+       printf("^^^Invalid option^^^\n");
+   }
+}
